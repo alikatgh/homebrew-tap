@@ -28,6 +28,11 @@ class Le < Formula
   def install
     bin.install "le"
     man1.install Dir["man/*.1"]
+    # Cobra ships `le completion <shell>`; generate + install so `le <tab>`
+    # works out of the box. Runs the just-installed binary at install time,
+    # so nothing extra is bundled in the tarball. Homebrew's helper emits
+    # zsh + fish for Cobra tools (zsh is the macOS default shell).
+    generate_completions_from_executable(bin/"le", "completion")
   end
 
   test do
