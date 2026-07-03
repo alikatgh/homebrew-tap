@@ -1,27 +1,27 @@
 class Le < Formula
   desc "See and stop what's listening on localhost, from the terminal"
   homepage "https://localhostexplorer.com"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     on_arm do
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.12/le_0.1.12_darwin_arm64.tar.gz"
-      sha256 "b170bbb8292aa1806008935ab02159b6f55103301a0409a92e182362e493f18d"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.13/le_0.1.13_darwin_arm64.tar.gz"
+      sha256 "ff12a53f0ea45405e65cc4f3db33c62a9358028360fff8bdb72addfd34720fb1"
     end
     on_intel do
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.12/le_0.1.12_darwin_amd64.tar.gz"
-      sha256 "4a8aa4fed70524606fb8618aafdad5f329b2ffe239f77cbfd5a3fc2da5a609fd"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.13/le_0.1.13_darwin_amd64.tar.gz"
+      sha256 "9044bba011c672f69c36b8f21c5b5254e05cd47e0c3aa26b10f12612909091bb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.12/le_0.1.12_linux_arm64.tar.gz"
-      sha256 "bc0e7e70acbb8559db73ac39afd638586f1023796448edd78d0b48c5412e67a3"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.13/le_0.1.13_linux_arm64.tar.gz"
+      sha256 "a2440967ea771c4ccc764d5d2f5c91a7c6e9d64e9938d8831d8bb8c564166ed0"
     end
     on_intel do
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.12/le_0.1.12_linux_amd64.tar.gz"
-      sha256 "8b8d47084732a5e7887bb60cc08c2f764c89bb0870ba9e3fdeb46bd1ade88cb5"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.13/le_0.1.13_linux_amd64.tar.gz"
+      sha256 "848b12fc55b9aafc1288f5b7b47b84da6d6d4eb6d16c7e602ca879f824635d99"
     end
   end
 
