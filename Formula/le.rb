@@ -5,13 +5,13 @@
 class Le < Formula
   desc "See and stop what's listening on localhost, from the terminal"
   homepage "https://localhostexplorer.com"
-  version "0.1.22"
+  version "0.1.23"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.22/le_0.1.22_darwin_amd64.tar.gz"
-      sha256 "70b624aca602b37d9983ea17c9e3bb03de6c2146288d2f834250ba68128dc0cc"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.23/le_0.1.23_darwin_amd64.tar.gz"
+      sha256 "8b4ee566a9ca27076ac79c03df32fdab62146751762ffdb0e70137728eef1fb4"
 
       define_method(:install) do
         bin.install "le"
@@ -24,8 +24,8 @@ class Le < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.22/le_0.1.22_darwin_arm64.tar.gz"
-      sha256 "a07375919190c99d6e193efc80561b33ac7d4a0c0ec60c4157a6d9bfcaec06c4"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.23/le_0.1.23_darwin_arm64.tar.gz"
+      sha256 "d77229ed09ecb2165140f4f13f78c2441120445e1022601bc118420530c2200e"
 
       define_method(:install) do
         bin.install "le"
@@ -41,8 +41,8 @@ class Le < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.22/le_0.1.22_linux_amd64.tar.gz"
-      sha256 "c6768801e533237fd4fd91d6fbbbc388753c6279c5464997aff8bb518eb550be"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.23/le_0.1.23_linux_amd64.tar.gz"
+      sha256 "2d22cf3114ff6f4af68a41da7a8539ea44e52dd24e6f6ba8e309a68e72b077e9"
       define_method(:install) do
         bin.install "le"
         man1.install Dir["man/*.1"]
@@ -54,8 +54,8 @@ class Le < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.22/le_0.1.22_linux_arm64.tar.gz"
-      sha256 "54abf075da9f69cb105d1a59db89d24785f133d3c4c3621bbb6eae6517dcc149"
+      url "https://github.com/alikatgh/le-cli/releases/download/v0.1.23/le_0.1.23_linux_arm64.tar.gz"
+      sha256 "d64c1a27bd6cc6234c59f8bdcabac310529d116b33f286c627e63a076354f25c"
       define_method(:install) do
         bin.install "le"
         man1.install Dir["man/*.1"]
